@@ -2,7 +2,7 @@
 
 [ext_resource path="res://Objects/portal_yellow.png" type="Texture" id=1]
 [ext_resource path="res://Objects/portal_yellowParticle.png" type="Texture" id=2]
-[ext_resource path="res://Portal.gd" type="Script" id=3]
+[ext_resource path="res://World/Portal.gd" type="Script" id=3]
 [ext_resource path="res://Music and Sounds/sfx_movement_portal3.wav" type="AudioStream" id=4]
 
 [sub_resource type="RectangleShape2D" id=1]

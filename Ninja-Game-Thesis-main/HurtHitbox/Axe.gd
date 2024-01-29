@@ -1,14 +1,25 @@
 extends "res://HurtHitbox/Hitbox.gd"
 
+var speed = Vector2(1000,0)
 
-export var SPEED = 1000
-
-
+var flag = Vector2(1,0)
+var flagdir = 0
 func _physics_process(delta):
 	#Οριζουμε κατευθυνση και ταχυτητα του axe
+	self.rotation_degrees += 20
 	var direction = Vector2.RIGHT.rotated(rotation)
-	global_position += SPEED*direction*delta
+	if flagdir < 0:
+		flag = Vector2(1,0)
+		global_position -= speed*flag*delta
+	else:
+		flag = Vector2(-1,0)
+		global_position -= speed*flag*delta
 
+
+func direction(dir):
+	if dir < 0 :
+		flagdir = -1
+	
 func destroy():
 	queue_free()
 

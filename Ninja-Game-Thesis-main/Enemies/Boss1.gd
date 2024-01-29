@@ -119,7 +119,7 @@ func _on_Stats_no_health():
 	queue_free()
 	var enemyDeathEffect = deatheffect.instance()
 	get_parent().add_child(enemyDeathEffect)
-	enemyDeathEffect.scale = Vector2(5,5) #Μεγαλωνουμε το μεγεθος του deatheffect
+	enemyDeathEffect.scale = Vector2(12,12) #Μεγαλωνουμε το μεγεθος του deatheffect
 	enemyDeathEffect.global_position = global_position
 	#Με τις παρακατω εντολες εμφανιζεται το portal ααφου πεθανει το boss και σταματαει η μουσικη του boss
 	var portal = get_parent().get_node("Portal") 

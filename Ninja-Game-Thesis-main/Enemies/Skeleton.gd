@@ -8,16 +8,18 @@ export var MAX_SPEED = 300 #μεγιστη ταχυτητα
 export var FRICTION = 1000 #τριβη
 var hitflag = true
 var hurt = false
+var dir
 const deatheffect = preload("res://HurtHitbox/DeathEffect.tscn") #για να κανουμε instance το deatheffect
 var knockback = Vector2.ZERO
 export var has_died = false #bool γιαν να γινει ελεγχος ωστε να εμφανιστει ενα label
-var AXE = preload("res://HurtHitbox/Axe.tscn") #για να κανουμε instance το deatheffect
-var KEY = preload("res://Objects/Key.tscn")	# για να κανουμε instance το deatheffect
+var AXE = preload("res://HurtHitbox/Axe.tscn") #για να κανουμε instance το axe
+var KEY = preload("res://Objects/Key.tscn")	# για να κανουμε instance το key
 onready var stats = $Stats
 onready var sprite = $AnimationPlayer
 onready var playerdetect = $PlayerDetectionZone
 onready var playerrange = $PlayerInRange
 var velocity = Vector2(0,0)
+signal direction_changed(direction)
 enum {
 	IDLE,
 	CHASE
@@ -117,10 +119,19 @@ func throw_axe():
 			get_tree().current_scene.add_child(axe)
 			#Με τις παρακατω εντολες εμφανιζουμε το axe σε προκαθορισμενη θεση
 			axe.global_position.y = self.global_position.y
-			axe.global_position.x = self.global_position.x - 192
+			
 			var player_x = player.global_position.x
-			var axe_rotation = self.global_position.direction_to(Vector2(player_x,self.global_position.y-10)).angle()
-			axe.rotation = axe_rotation
+			if self.global_position.x > player_x:
+				axe.global_position.x = self.global_position.x - 192
+				dir = -1
+				axe.direction(dir)
+			else:
+				axe.global_position.x = self.global_position.x + 192
+				dir = 1
+				axe.direction(dir)
+
+
+
 
 
 

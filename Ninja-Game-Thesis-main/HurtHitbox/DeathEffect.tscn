@@ -1,6 +1,6 @@
 [gd_scene load_steps=15 format=2]
 
-[ext_resource path="res://DeathEffect.gd" type="Script" id=1]
+[ext_resource path="res://HurtHitbox/DeathEffect.gd" type="Script" id=1]
 [ext_resource path="res://HurtHitbox/EnemyDeathEffect.png" type="Texture" id=2]
 [ext_resource path="res://Music and Sounds/EnemyDie.wav" type="AudioStream" id=3]
 

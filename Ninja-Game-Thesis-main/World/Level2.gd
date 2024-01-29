@@ -20,7 +20,7 @@ var gateflag = false
 func _ready():
 	LevelsUnlocked.level2_unlocked(true)
 	LevelsUnlocked.save_level()
-	Music.play_music()
+	#Music.play_music()
 	Music.stop_boss_music()
 	PlayerStats.max_health_lv2 = starting_max_health   #κραταμε το αρχικο max health σε περιπτωση που πεθανουμε και ξαναξεκινησουμε
 

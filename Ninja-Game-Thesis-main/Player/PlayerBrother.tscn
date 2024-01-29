@@ -21,7 +21,7 @@
 [ext_resource path="res://Characters/Blue Ninja/die/Blue_Ninja_Die_6.png" type="Texture" id=27]
 [ext_resource path="res://Characters/Blue Ninja/die/Blue_Ninja_Die_8.png" type="Texture" id=28]
 [ext_resource path="res://Characters/Blue Ninja/die/Blue_Ninja_Die_7.png" type="Texture" id=29]
-[ext_resource path="res://Stats.tscn" type="PackedScene" id=30]
+[ext_resource path="res://Player/Stats.tscn" type="PackedScene" id=30]
 [ext_resource path="res://Characters/Blue Ninja/die/Blue_Ninja_Die_1.png" type="Texture" id=31]
 [ext_resource path="res://Characters/Blue Ninja/die/Blue_Ninja_Die_5.png" type="Texture" id=32]
 

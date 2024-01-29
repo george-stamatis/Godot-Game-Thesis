@@ -10,7 +10,7 @@ func _ready():
 		$VBoxContainer/Level3.set_deferred("disabled", false) 
 func _on_Level1_pressed():
 	#λειτουργια κουμπιου
-	get_tree().change_scene("res://Cutscene.tscn")
+	get_tree().change_scene("res://World/Cutscene.tscn")
 
 
 func _on_Back_pressed():

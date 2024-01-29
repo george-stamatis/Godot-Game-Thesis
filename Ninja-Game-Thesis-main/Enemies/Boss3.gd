@@ -124,7 +124,7 @@ func _on_Stats_no_health():
 	var enemyDeathEffect = deatheffect.instance() #κανουμε instance το deatheffect
 	get_parent().add_child(enemyDeathEffect)
 	enemyDeathEffect.global_position = global_position
-	enemyDeathEffect.scale = Vector2(5,5) #Μεγαλωνουμε το μεγεθος του deatheffect
+	enemyDeathEffect.scale = Vector2(12,12) #Μεγαλωνουμε το μεγεθος του deatheffect
 	worldmusic.stop_boss_music()
 	PlayerStats.game_finsihed = true #ωστε να μην μπορουμε να κανουμε pause στο winscreen
 	var winscreen = get_parent().get_node("WinScreen") #εμφανιζουμε το winscreen kai παιζουμε τη μουσικη του

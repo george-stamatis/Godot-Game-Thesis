@@ -336,6 +336,7 @@ collision_mask = 2
 [node name="LabelAreas" type="Node" parent="."]
 
 [node name="LabelArea" type="Area2D" parent="LabelAreas"]
+visible = false
 position = Vector2( 376.497, 1179.39 )
 collision_layer = 0
 __meta__ = {

@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://Projectile.gd" type="Script" id=1]
+[ext_resource path="res://HurtHitbox/Projectile.gd" type="Script" id=1]
 [ext_resource path="res://HurtHitbox/Hitbox.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Weapons/Shuriken/shuriken 1.png" type="Texture" id=3]
 

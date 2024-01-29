@@ -10,8 +10,7 @@ var gateflag = false
 var treeflag = false
 
 func _ready():
-#	pass
-	Music.play_music()
+	#Music.play_music()
 	Music.stop_boss_music()
 
 func _process(delta):

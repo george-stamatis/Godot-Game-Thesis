@@ -7,7 +7,7 @@
 [ext_resource path="res://Backgrounds/Background Cave/PNG/Background_Cave_4.png" type="Texture" id=5]
 [ext_resource path="res://Tilesets/Rock Cave/Rockcave_Guide.png" type="Texture" id=6]
 [ext_resource path="res://Enemies/Boss2.tscn" type="PackedScene" id=7]
-[ext_resource path="res://Portal.tscn" type="PackedScene" id=8]
+[ext_resource path="res://World/Portal.tscn" type="PackedScene" id=8]
 [ext_resource path="res://UI/HealthandUltra.tscn" type="PackedScene" id=9]
 [ext_resource path="res://UI/PauseMenu.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Objects/Tombstone.tscn" type="PackedScene" id=11]
@@ -626,7 +626,6 @@ has_key = true
 [connection signal="body_entered" from="LabelAreas/LabelBoulderFound" to="." method="_on_LabelBoulderFound_body_entered"]
 [connection signal="body_entered" from="Objects/Lever" to="." method="_on_Lever_body_entered"]
 [connection signal="body_entered" from="Objects/Lever2" to="." method="_on_Lever2_body_entered"]
-[connection signal="body_exited" from="Objects/Gate/Area2D" to="Objects/Gate" method="_on_Area2D_body_exited"]
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
 
 [editable path="Portal"]
