@@ -51,3 +51,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: main # The branch the action should deploy to.
           FOLDER: build/web # The folder the action should deploy.
+      - name: Get base branch
+        id: vars
+        run: |
+          base_ref=${{ github.head_ref || github.ref }}
+          echo ::set-output name=base_branch::${base_ref#refs/*/}
